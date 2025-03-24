@@ -20,10 +20,6 @@ async function fetchVideos() {
                 videoCard.innerHTML = `
                     <iframe src="https://www.youtube.com/embed/${item.id.videoId}" allowfullscreen></iframe>
                     <h3>${item.snippet.title}</h3>
-                    <div class="actions">
-                        <a href="https://www.youtube.com/watch?v=${item.id.videoId}&feature=share" target="_blank" class="share-btn">Share</a>
-                        <a href="https://www.youtube.com/watch?v=${item.id.videoId}" target="_blank" class="like-btn">Like</a>
-                    </div>
                 `;
                 videoContainer.appendChild(videoCard);
             }
